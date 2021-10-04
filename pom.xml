@@ -113,6 +113,14 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
+		
+		<!-- JASYPT: Spring 3.1x Simplified Encryption -->
+		<dependency>
+		    <groupId>org.jasypt</groupId>
+		    <artifactId>jasypt-spring31</artifactId>
+		    <version>1.9.2</version>
+		    <scope>compile</scope>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>webapp</finalName>
