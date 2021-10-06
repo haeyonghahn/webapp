@@ -17,24 +17,6 @@
 		<context:exclude-filter type="regex" expression="com.springframework.comet.controller.*" />
 	</context:component-scan> 	
 
-	<bean id="encryptorConfig" class="org.jasypt.encryption.pbe.config.EnvironmentStringPBEConfig">  
-    	<property name="algorithm" value="PBEWithMD5AndDES" />  
-        <property name="password" value="BRACE_PASS" />
-	</bean>  
-	       
-	<bean id="encryptor" class="org.jasypt.encryption.pbe.StandardPBEStringEncryptor">  
-		<property name="config" ref="encryptorConfig" />  
-	</bean>  
-	      
-	<bean class="org.jasypt.spring31.properties.EncryptablePropertyPlaceholderConfigurer">  
-	    <constructor-arg ref="encryptor" />  
-	    <property name="locations">  
-	        <list>  
-	            <value>file:${root.dir}</value>  
-	        </list>  
-	    </property>
-	</bean>  
-
 	<!-- MessageSource -->
 	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
 		<property name="basenames">
