@@ -169,8 +169,8 @@
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>tomcat-maven-plugin</artifactId>
 				<configuration>
-					<url>http://192.168.1.104:8080/manager/text</url>
-					<path>/webapp</path>
+					<url>http://ip주소:포트번호/manager/text</url>
+					<path>/</path>
 					<username>admin</username>
 					<password>admin</password>
 				</configuration>
